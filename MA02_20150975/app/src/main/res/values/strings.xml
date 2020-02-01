@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MA02_20150975</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="server_url">http://api.visitkorea.or.kr/openapi/service/rest/KorService/searchKeyword?ServiceKey=OaHxXfZWQ7XsXKID3%2Feq7UJskzCvJkrtgTj9hUT6kSK7msHMDkgvCYEHkoFe23YyTco3VOM%2FyE0VU4ooB7YqaQ%3D%3D&amp;MobileOS=AND&amp;MobileApp=MA02_20150975&amp;contentTypeId=39&amp;keyword=</string>
+    <string name="facebook_app_id">186050281978889</string>
+    <string name="fb_login_protocol_scheme">fb186050281978889</string>
+</resources>

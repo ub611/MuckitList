@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lecture.mobile.final_project.ma02_20150975.DetailActivity">
+
+    <TextView
+        android:id="@+id/tvDetTitle"
+        android:layout_width="169dp"
+        android:layout_height="38dp"
+        android:text="TextView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivDetail"
+        android:layout_width="144dp"
+        android:layout_height="136dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/gallery_thumb" />
+
+    <TextView
+        android:id="@+id/tvDeTell"
+        android:layout_width="169dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetTitle" />
+
+    <TextView
+        android:id="@+id/tvDeAddress"
+        android:layout_width="172dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeTell" />
+
+    <TextView
+        android:id="@+id/tvDetReview"
+        android:layout_width="338dp"
+        android:layout_height="266dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeAddress" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="78dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="onClick"
+        android:text="update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnCancel" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="78dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:onClick="onClick"
+        android:text="CANCEL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="18dp"
+        android:clickable="false"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeAddress" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:text="visited!"
+        app:layout_constraintRight_toLeftOf="@+id/cbDetail"
+        android:layout_marginTop="22dp"
+        app:layout_constraintTop_toBottomOf="@+id/ivDetail" />
+
+    <ImageButton
+        android:id="@+id/btnShare"
+        android:layout_width="34dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:padding="0dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/shapes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="459dp" />
+
+    <RatingBar
+        android:id="@+id/rbDetail"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:numStars="5"
+        android:isIndicator="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeAddress"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <ImageButton
+        android:id="@+id/btnGoMap"
+        android:layout_width="45dp"
+        android:layout_height="41dp"
+        android:text="Button"
+        app:layout_constraintLeft_toRightOf="@+id/btnShare"
+        android:layout_marginLeft="20dp"
+        android:padding="0dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        android:onClick="onClick"
+        android:src="@drawable/detailmap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        tools:layout_editor_absoluteY="454dp" />
+</android.support.constraint.ConstraintLayout>
